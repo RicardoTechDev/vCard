@@ -3,9 +3,10 @@ import { Home } from "../pages/Client";
 
 const routesClient = [
     {
-            path: "/",
-            layout: ClientLayout,
-            Component: Home
+        path: "/",
+        layout: ClientLayout,
+        component: Home,
+        exact: true,
     }
 ];
 

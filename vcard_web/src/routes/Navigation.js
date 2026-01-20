@@ -13,7 +13,7 @@ export function Navigation() {
             path={route.path}
             element= {
               <route.layout>
-                <route.Component />
+                <route.component />
               </route.layout>
             }
           />

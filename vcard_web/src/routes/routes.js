@@ -1,6 +1,14 @@
 import routesAdmin from "./routes.admin";
 import routesClient from "./routes.client";
+import { Error404 } from "../pages";
+import { BasicLayout } from "../layouts";
 
-const routes = [ ...routesAdmin, ...routesClient]// ...routesAdmin me devuelve el contenido al usar los ... para crear un [{}, {}]
+const routes = [ ...routesAdmin, ...routesClient,
+    {
+        path: "*",
+        layout: BasicLayout,
+        component: Error404
+    }
+]// ...routesAdmin me devuelve el contenido al usar los ... para crear un [{}, {}]
 
 export default routes;

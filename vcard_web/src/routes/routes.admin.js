@@ -5,7 +5,8 @@ const routesAdmin = [
     {
         path: "/admin",
         layout: AdminLayout,
-        Component: LoginAdmin
+        component: LoginAdmin,
+        exact: true,
     }
 ];
 
